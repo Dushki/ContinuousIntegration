@@ -1,7 +1,0 @@
-#!/bin/sh
-
-ssh -tt produser@18.216.181.11 << 'EOT'
-  docker pull docker16121988/preprod:final
-  docker run -itd -p 5000:5000 docker16121988/preprod:final
-  exit
-EOT
